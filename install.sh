@@ -11,6 +11,9 @@ tar -xvf Windows-Eleven.tar
 unxz windows-eleven.tar.xz
 tar -xvf windows-eleven.tar
 
+#Extracting the Theme
+unxz Win11-round-Light-compact.tar.xz
+tar -xvf Win11-round-Light-compact.tar
 
 
 
