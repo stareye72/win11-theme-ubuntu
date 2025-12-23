@@ -20,5 +20,8 @@ tar -xvf windows-eleven.tar
 unxz Win11-round-Light-compact.tar.xz
 tar -xvf Win11-round-Light-compact.tar
 
+#Cloning dashtopanel from Git Repository
+git clone https://github.com/home-sweet-gnome/dash-to-panel.git
+
 
 
