@@ -1,5 +1,10 @@
 #Install Scipt for Windows Eleven Theme for Ubuntu
 
+
+
+#Install Require Packages
+sudo apt install git make gettext
+
 #Extracting the Mousepointer
 unzip Win11OS.zip
 
