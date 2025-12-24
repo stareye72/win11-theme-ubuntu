@@ -25,23 +25,26 @@ git clone https://github.com/home-sweet-gnome/dash-to-panel.git
 
 #Creating the .icons and .theme directorys
 
-if [-d $HOME/.icons];then
+if [ -d "$HOME/.icons" ]; then
 	mv Windows-Eleven $HOME/.icons
 else
 	mkdir -p $HOME/.icons
 	mv Windows-Eleven $HOME/.icons
 fi
 
-if [-d $HOME/.themes];then
+if [ -d "$HOME/.themes" ]; then
 	mv Win11-round-Light-compact $HOME/.themes
 else
-	mkdir-p $HOME/.themes
+	mkdir -p $HOME/.themes
 	mv Win11-round-Light-compact $HOME/.themes
 fi
 
-if [-d $HOME/.icons];then
+if [ -d "$HOME/.icons" ]; then
+	cd Win11OS
 	mv Win11OS $HOME/.icons
+
 else
 	mkdir -p $HOME/.icons
+	cd Win11OS
 	mv Win11OS $HOME/.icons
 fi
