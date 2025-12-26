@@ -54,7 +54,7 @@ fi
 
 #copying the wallpaper
 echo 'copying the wallpaper'
-sudo cp biom.jpg /usr/share/backgrounds
+sudo cp $HOME/win11-theme-ubuntu/biom.jpg /usr/share/backgrounds
 
 #Disabling dash-to-dock
 echo 'Disabling dash-to-dock'
