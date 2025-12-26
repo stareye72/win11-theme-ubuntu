@@ -15,10 +15,6 @@ echo 'Extracing the Icons'
 unxz Windows-Eleven.tar.xz
 tar -xf Windows-Eleven.tar
 
-#Extracting the Wallpaper
-echo 'Extracting the Wallpaper'
-unxz windows-eleven.tar.xz
-tar -xf windows-eleven.tar
 
 #Extracting the Theme
 echo 'Extracting the Theme'
