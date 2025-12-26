@@ -63,6 +63,7 @@ gsettings set org.gnome.desktop.background picture-uri 'file:///usr/share/backgr
 
 #setting the Theme
 gsettings set org.gnome.desktop.interface gtk-theme 'Win11-round-Light-compact'
+gsettings set org.gnome.shell.extensions.user-theme name 'Win11-round-Light-compact'
 
 #setting the icon-theme
 gsettings set org.gnome.desktop.interface icon-theme 'Windows-Eleven'
