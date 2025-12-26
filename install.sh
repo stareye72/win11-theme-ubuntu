@@ -55,7 +55,7 @@ fi
 #copying the wallpaper
 echo 'copying the wallpaper'
 mkdir -p $HOME/wallpaper
-sudo cp $HOME/win11-theme-ubuntu/biom.jpg $HOME/wallpaper
+sudo cp $HOME/win11-theme-ubuntu/biom.jpg /usr/share/backgrounds
 
 #Disabling dash-to-dock
 echo 'Disabling dash-to-dock'
@@ -70,7 +70,7 @@ gnome-extensions enable 'user-theme@gnome-shell-extensions.gcampax.github.com'
 
 #setting the Wallpaper
 echo 'setting the Wallpaper'
-gsettings set org.gnome.desktop.background picture-uri 'file:///$HOME/wallpaper/biom.jpg'
+gsettings set org.gnome.desktop.background picture-uri 'file:///usr/share/backgrounds/biom.jpg'
 
 #setting the Theme
 echo 'setting the Theme'
