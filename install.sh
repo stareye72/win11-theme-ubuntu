@@ -84,3 +84,8 @@ gsettings set org.gnome.desktop.interface icon-theme 'Windows-Eleven'
 #setting the cursor-theme
 echo 'setting the cursor-theme'
 gsettings set org.gnome.desktop.interface cursor-theme 'Win11OS'
+
+#Setting the Desktop Icons
+echo 'Setting the Desktop icons'
+gsettings set org.gnome.shell.extensions.ding start-corner 'top-left'
+gsettings set org.gnome.shell.extensions.ding show-trash  'true'
