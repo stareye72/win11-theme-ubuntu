@@ -3,27 +3,34 @@
 
 
 #Install Require Packages
+echo 'Installing the Packages'
 sudo apt install git make gettext
 
-#Extracting the Mousepointer
+#Extracting the Cursor
+echo 'Extracting the Cursor'
 unzip Win11OS.zip
 
 #Extracing the Icons
+echo 'Extracing the Icons'
 unxz Windows-Eleven.tar.xz
-tar -xvf Windows-Eleven.tar
+tar -xf Windows-Eleven.tar
 
 #Extracting the Wallpaper
+echo 'Extracting the Wallpaper'
 unxz windows-eleven.tar.xz
-tar -xvf windows-eleven.tar
+tar -xf windows-eleven.tar
 
 #Extracting the Theme
+echo 'Extracting the Theme'
 unxz Win11-round-Light-compact.tar.xz
-tar -xvf Win11-round-Light-compact.tar
+tar -xf Win11-round-Light-compact.tar
 
 #Cloning dashtopanel from Git Repository
+echo 'Cloning dashtopanel from Git Repository'
 git clone https://github.com/home-sweet-gnome/dash-to-panel.git
 
 #Creating the .icons and .theme directorys
+echo 'Creating the .icons and .theme directorys'
 
 if [ -d "$HOME/.icons" ]; then
 	mv Windows-Eleven $HOME/.icons
@@ -49,24 +56,34 @@ else
 	mv Win11OS $HOME/.icons
 fi
 
+#copying the wallpaper
+echo 'copying the wallpaper'
+sudo cp biom.jpg /usr/share/backgrounds
+
 #Disabling dash-to-dock
+echo 'Disabling dash-to-dock'
 gsettings set org.gnome.shell.extensions.dash-to-dock autohide false
 gsettings set org.gnome.shell.extensions.dash-to-dock dock-fixed false
 gsettings set org.gnome.shell.extensions.dash-to-dock intellihide false
 
-#Enabling dash-to-panel
+#Enabling dash-to-panel and user-theme
+echo 'Enabling dash-to-panel and user-theme'
 gnome-extensions enable 'dash-to-panel@jderose9.github.com'
 gnome-extensions enable 'user-theme@gnome-shell-extensions.gcampax.github.com'
 
 #setting the Wallpaper
+echo 'setting the Wallpaper'
 gsettings set org.gnome.desktop.background picture-uri 'file:///usr/share/backgrounds/biom.jpg'
 
 #setting the Theme
+echo 'setting the Theme'
 gsettings set org.gnome.desktop.interface gtk-theme 'Win11-round-Light-compact'
 gsettings set org.gnome.shell.extensions.user-theme name 'Win11-round-Light-compact'
 
 #setting the icon-theme
+echo 'setting the icon-theme'
 gsettings set org.gnome.desktop.interface icon-theme 'Windows-Eleven'
 
 #setting the cursor-theme
+echo 'setting the cursor-theme'
 gsettings set org.gnome.desktop.interface cursor-theme 'Win11OS'
