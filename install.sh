@@ -48,3 +48,19 @@ else
 	cd Win11OS
 	mv Win11OS $HOME/.icons
 fi
+
+#Disabling dash-to-dock
+gsettings set org.gnome.shell.extensions.dash-to-dock autohide false
+gsettings set org.gnome.shell.extensions.dash-to-dock dock-fixed false
+gsettings set org.gnome.shell.extensions.dash-to-dock intellihide false
+
+#Enabling dash-to-panel
+gnome-extensions enable 'dash-to-panel@jderose9.github.com'
+gnome-extensions enable 'user-theme@gnome-shell-extensions.gcampax.github.com'
+
+#setting the Wallpaper
+gsettings set org.gnome.desktop.background picture-uri 'file:///usr/share/backgrounds/biom.jpg'
+
+#setting the Theme
+gsettings set org.gnome.desktop.interface gtk-theme 'Win11-round-Light-compact'
+
