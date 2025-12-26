@@ -64,3 +64,8 @@ gsettings set org.gnome.desktop.background picture-uri 'file:///usr/share/backgr
 #setting the Theme
 gsettings set org.gnome.desktop.interface gtk-theme 'Win11-round-Light-compact'
 
+#setting the icon-theme
+gsettings set org.gnome.desktop.interface icon-theme 'Windows-Eleven'
+
+#setting the cursor-theme
+gsettings set org.gnome.desktop.interface cursor-theme 'Win11OS'
